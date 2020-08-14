@@ -1,0 +1,293 @@
+/* root element */
+
+html {
+	font-size: 16px;
+}
+
+/* body & fonts */
+
+body {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-family: 'Asul', sans-serif;
+	font-size: 1.875rem;
+}
+
+p, li, a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+h2, h3 {
+	font-family: 'Asul', sans-serif;
+}
+
+p, h1, h2, h3, h5, li, a, a:visited {
+	color: rgb(36, 36, 36);
+	text-decoration: none;
+}  
+
+a:hover {
+	color: rgb(114, 114, 114);
+}
+
+/* Navigation & Banner */
+
+nav {
+	width: 100%;
+}
+
+.logo-line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 90%;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  margin-top: 0;
+}
+
+.nav-item {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.cta-shipping {
+  width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: tomato;
+
+}
+
+.cta-shipping p {
+	color: #fff;
+	min-width: 15.625rem;
+	text-align: center;
+}
+
+.banner {
+	background-image: url(images/poppies.gif);
+	background-size: cover;
+	color: thistle;
+	font-size: 3.75rem;
+	text-align: center;
+	width: 100%;
+	height: 18.75rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 6.25rem;
+	max-height: 25rem;
+}
+
+/* Categories & About */
+
+.categories { 
+	display: flex;
+	width: 100%;
+	margin-top: 1%;
+	align-items: center;
+	justify-content: center;
+}
+
+.category-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: thistle;
+	height: 9.375rem;
+}
+
+.category-box h2, .category-box p {
+	display: inline-flex;
+	text-align: center;
+	margin: 3%;
+}
+
+.category-box + .category-box {
+	margin-left: 1%;
+}
+
+.about-boxes { 
+	display: flex;
+	width: 100%;
+	margin-top: 1.875rem;
+	margin-bottom: 1.875rem;
+}
+
+.about-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 5%;
+}
+
+.about-box img, .about-box h2, .about-box p {
+	max-height: 3.125rem;
+	display: inline-flex;
+	text-align: center;
+	margin: 3%;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.footer-links {
+	width: 100%;
+	margin-top: 3.125rem;
+	margin-bottom: 1.25rem;
+	padding-top: 3.125rem;
+	border-top: thistle 0.0625rem solid;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.link-box {
+	width: 49.5%;
+	align-items: flex-start;
+}
+
+.link-box:nth-child(3n) {
+	width: 100%
+}
+
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+
+.links h3 {
+	margin-top: 0;
+}
+
+.links a {
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.source {
+	margin-top: 1.875rem;
+	padding-top: 1.25rem;
+	border-top: thistle 0.0625rem solid;
+}
+
+.source h5 {
+	margin: 0.0625rem;
+}
+
+.social img {
+	height: 1.875rem;
+	padding: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.social h3 {
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+	width: 100%;
+}
+
+.social {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* media query */ 
+
+@media only screen and (max-width: 47.9375rem) {
+	.nav-menu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;  
+		text-align: center;
+	  }
+
+	  ul.nav-menu {
+		  padding: 0;
+	  }
+	
+	.categories {
+		display: flex;
+  		flex-direction: column;
+		align-items: center;
+		margin-top: 0;  
+	}
+
+	.category-box {
+		margin-top: 1%;
+		margin-bottom: 0;
+	}
+	.category-box + .category-box {
+		margin-left: 0;
+	}
+
+	.about-boxes {
+		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+	}
+
+	.about-box {
+		margin: 2.5rem;
+
+	}	
+	.about-box img, .about-box h2, .about-box p {
+		display: inline-flex;
+		text-align: center;
+		margin: 0.3125rem;
+	}
+
+	.about-box p {
+		max-width: 25rem;
+		min-width: 18.75rem;
+	}
+
+	.link-box {
+		width: 100%;
+	}
+
+	.social {
+		margin-top: 2.5rem;
+	}
+	
+}
